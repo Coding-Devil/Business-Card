@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Business Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="business-card-styles.css">
+</head>
+<body>
+  <div class="card-container">
+      <div class="card">
+          <div class="card-header">
+              <img src="circle gokul.png" alt="GOKULNATH V" class="avatar">
+          </div>
+          <div class="card-body">
+            <p>Hello! I am </p>
+              <h1>GOKULNATH V</h1>
+              <h3>Web Developer & Data Analyst</h3>
+              <p> B.E CSE & Data Science</p>
+              <br>
+              <p>1rn21cd015.gokulnathv@rnsit.ac.in</p>
+              <p>+91 9108107085</p>
+          </div>
+          <div class="card-footer">
+            <a href="Gokulnath's resume.pdf" target="_blank" class="social-icon pdf" download></a>
+              <a href="https://www.instagram.com/gokulnath.03/" target="_blank" class="social-icon ig"></a>
+              <a href="https://www.linkedin.com/in/gokulnath-v-2003g" target="_blank" class="social-icon linkedin"></a>
+              <a href="https://github.com/Coding-Devil" target="_blank" class="social-icon github"></a>
+          </div>
+      </div>
+  </div>
+</body>
+</html>
+
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing:content-box;
+}
+
+body {
+  font-family:Arial, Helvetica, sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: rgb(21, 21, 21);
+  background-image: url('bg1.gif') ;
+  background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  box-shadow: #121212;
+}
+
+.card-container {
+  perspective: 1500px;
+}
+
+.card {
+  width: 350px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s;
+  border-style:double;
+  border-radius: 21px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+.card-header {
+  background-color: #45cdff;
+  background-image: url("bg2.jpg");
+  background-size: cover; /* this will cover the entire area */
+background-position: center; 
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style:groove;
+  border-radius: 17px;
+}
+
+.avatar {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border-style: groove;
+  border-color: #121212;
+  border-radius: 50%;
+}
+
+.card-body {
+  padding: 20px;
+  text-align: center;
+  border-bottom-style: groove;
+}
+
+h1 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #03116f;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.card-footer {
+  margin-top: 5px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+p{
+    padding: 5px;
+}
+.social-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-size: 30px; /* Adjusted to make the icons larger */
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0 15px; /* Added to give more space between icons */
+  transition: transform 0.3s;
+}
+
+.social-icon:hover {
+  transform: scale(1.5);
+}
+.pdf-icon {
+    width: 50px; /* or any size you prefer */
+    height: auto; /* maintain aspect ratio */
+    margin: 0 10px; /* adjust spacing around the icon */
+    transition: transform 0.3s;
+}
+
+.resume-link:hover .pdf-icon {
+    transform: scale(1.1); /* subtle grow effect on hover */
+}
+
+.ig {
+  background-image: url('instagram-logo.png');
+}
+
+.linkedin {
+  background-image: url('linkedin.png');
+}
+
+.github {
+  background-image: url('github.png');
+}
+.pdf{
+    background-image: url("cv.png");
+}
+</style>
